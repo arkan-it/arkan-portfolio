@@ -326,33 +326,40 @@ h1, h2, h3, h4, h5, h6 {
 
 /*** footer starts ***/
 
-#footer {
+.footer-container {
 	background-color: #E5E5E5;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	height: 7rem;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 20px;
 }
 
-#footer #logo {
-	border-radius: 0;
-	color: #fff;
-	font-family: "Maven pro", sans-serif;
-	display: inline;
+.footer-container a{
+	color:#14213D;
+	font-weight: 600;
+	text-transform: lowercase;
 }
 
-#copyright {
-	margin: 0;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	color: #14213D;
-	display: inline-flex;
-	justify-content: center;
-	flex-wrap: nowrap;
-	width: 20rem;
-	margin-right: 7rem;
+.footer-container a:hover{
+	color: #FCA311;
 }
 
+@media screen and (max-width: 667px){
+	.footer-container{
+		flex-direction: column;
+	}
+
+	.logo{
+		padding: 0;
+		margin: 0;
+		height: 150px;
+	}
+
+	.copyright{
+		margin-bottom: 10px;
+	}
+
+}
 
 
